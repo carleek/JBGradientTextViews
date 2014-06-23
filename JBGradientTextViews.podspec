@@ -56,19 +56,14 @@ Each  UILabel, UITextView, and UITextField each contain the following additional
                                              DESC
   s.homepage         = "https://github.com/carleek/JBGradientTextViews"
   s.license          = 'MIT'
-  s.author           = { "carleek" => "bryson.joshua@gmail.com" }
+  s.author           = { "carleek" => "joshbryson@quickworkapps.com" }
   s.source           = { :git => "https://github.com/carleek/JBGradientTextViews.git", :tag => s.version.to_s }
 
-  # s.platform     = :ios, '5.0'
-  # s.ios.deployment_target = '5.0'
-  # s.osx.deployment_target = '10.7'
+  s.platform     = :ios, '5.0'
   s.requires_arc = true
 
   s.source_files = 'Classes'
 
   s.ios.exclude_files = 'Classes/osx'
   s.osx.exclude_files = 'Classes/ios'
-  # s.public_header_files = 'Classes/**/*.h'
-  # s.frameworks = 'UIKit'
-  # s.dependency 'JSONKit', '~> 1.4'
 end
