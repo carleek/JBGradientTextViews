@@ -7,19 +7,57 @@
 Pod::Spec.new do |s|
   s.name             = "JBGradientTextViews"
   s.version          = File.read('VERSION')
-  s.summary          = "A short description of JBGradientTextViews."
+  s.summary          = "JBGradientTextViews adds the ability to add gradients to all your favorite UI text classes!"
   s.description      = <<-DESC
-                       An optional longer description of JBGradientTextViews
+JBGradientTextViews
+===================
 
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
-                       DESC
-  s.homepage         = "http://EXAMPLE/NAME"
-  s.screenshots      = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+JBGradient classes provide a useful way of adding gradients to UILabels UITextViews and UITextFields.  Usually you need to add a gradient to a UIView and then add one of these text display classes as a subview.  These gradient classes are subclasses to the standard UI classes mentioned above, so they can be used in the same way as your other labels (etc).
+
+## Usage
+
+To use the classes add the gradient files to your project and just designate your UILabel, UITextView, or UITextField as a subclass of the JBGradientLabel, JBGradientTextView, JBGradientLabel then set the CGGradientLayer properties for the subclass:
+```objective-c
+#import "JBGradientLabel.h"
+...
+- (void)viewDidLoad {
+    [super viewDidLoad];
+
+    JBGradientLabel *label = [[JBGradientLabel alloc] initWithFrame:CGRectMake(20, 20, 280, 100)];
+    label.gradientColors =  @[[UIColor blackColor], [UIColor redColor]];
+    label.textColor = [UIColor whiteColor];
+    [label setText:@"This is a gradient label!"];
+    [self.view addSubview:label];
+}
+```
+Each  UILabel, UITextView, and UITextField each contain the following additional properties:
+
+```objective-c
+// For all Gradients
+@property (nonatomic, assign) JBGradientType gradientType;
+
+@property (nonatomic, strong) NSArray *gradientColors;
+@property (nonatomic, strong) NSArray *gradientLocations;
+@property (nonatomic, assign) CGGradientDrawingOptions options;
+
+// For the Linear Gradients
+@property (nonatomic, assign) CGPoint startPoint;
+@property (nonatomic, assign) CGPoint endPoint;
+
+// For the Radial Gradients
+@property (nonatomic, assign) CGPoint startCenter;
+@property (nonatomic, assign) CGFloat startRadius;
+@property (nonatomic, assign) CGPoint endCenter;
+@property (nonatomic, assign) CGFloat endRadius;
+
+```
+
+
+                                             DESC
+  s.homepage         = "https://github.com/carleek/JBGradientTextViews"
   s.license          = 'MIT'
   s.author           = { "carleek" => "bryson.joshua@gmail.com" }
-  s.source           = { :git => "http://EXAMPLE/NAME.git", :tag => s.version.to_s }
-  s.social_media_url = 'https://twitter.com/EXAMPLE'
+  s.source           = { :git => "https://github.com/carleek/JBGradientTextViews.git", :tag => s.version.to_s }
 
   # s.platform     = :ios, '5.0'
   # s.ios.deployment_target = '5.0'
@@ -27,11 +65,10 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.source_files = 'Classes'
-  s.resources = 'Assets/*.png'
 
   s.ios.exclude_files = 'Classes/osx'
   s.osx.exclude_files = 'Classes/ios'
   # s.public_header_files = 'Classes/**/*.h'
-  # s.frameworks = 'SomeFramework', 'AnotherFramework'
+  # s.frameworks = 'UIKit'
   # s.dependency 'JSONKit', '~> 1.4'
 end
