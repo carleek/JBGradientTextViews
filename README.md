@@ -4,10 +4,6 @@
 [![License](https://img.shields.io/cocoapods/l/JBGradientTextViews.svg?style=flat)](http://cocoadocs.org/docsets/JBGradientTextViews)
 [![Platform](https://img.shields.io/cocoapods/p/JBGradientTextViews.svg?style=flat)](http://cocoadocs.org/docsets/JBGradientTextViews)
 
-## Usage
-
-JBGradientTextViews
-===================
 
 JBGradient classes provide a useful way of adding gradients to UILabels UITextViews and UITextFields.  Usually you need to add a gradient to a UIView and then add one of these text display classes as a subview.  These gradient classes are subclasses to the standard UI classes mentioned above, so they can be used in the same way as your other labels (etc).
 
