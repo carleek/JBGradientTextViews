@@ -119,9 +119,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6E1480471958B8E8003B3F71 /* JBGradientTextViewsDemo */ = {
+		6E1480471958B8E8003B3F71 /* Demo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6E1480681958B8E8003B3F71 /* Build configuration list for PBXNativeTarget "JBGradientTextViewsDemo" */;
+			buildConfigurationList = 6E1480681958B8E8003B3F71 /* Build configuration list for PBXNativeTarget "Demo" */;
 			buildPhases = (
 				6E1480441958B8E8003B3F71 /* Sources */,
 				6E1480451958B8E8003B3F71 /* Frameworks */,
@@ -131,7 +131,7 @@
 			);
 			dependencies = (
 			);
-			name = JBGradientTextViewsDemo;
+			name = Demo;
 			productName = JBGradientTextViewsDemo;
 			productReference = 6E1480481958B8E8003B3F71 /* JBGradientTextViewsDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -185,7 +185,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6E1480471958B8E8003B3F71 /* JBGradientTextViewsDemo */,
+				6E1480471958B8E8003B3F71 /* Demo */,
 				6E14805D1958B8E8003B3F71 /* JBGradientTextViewsDemoTests */,
 			);
 		};
@@ -234,7 +234,7 @@
 /* Begin PBXTargetDependency section */
 		6E1480601958B8E8003B3F71 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6E1480471958B8E8003B3F71 /* JBGradientTextViewsDemo */;
+			target = 6E1480471958B8E8003B3F71 /* Demo */;
 			targetProxy = 6E14805F1958B8E8003B3F71 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -397,13 +397,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6E1480681958B8E8003B3F71 /* Build configuration list for PBXNativeTarget "JBGradientTextViewsDemo" */ = {
+		6E1480681958B8E8003B3F71 /* Build configuration list for PBXNativeTarget "Demo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6E1480691958B8E8003B3F71 /* Debug */,
 				6E14806A1958B8E8003B3F71 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6E14806B1958B8E8003B3F71 /* Build configuration list for PBXNativeTarget "JBGradientTextViewsDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -412,6 +413,7 @@
 				6E14806D1958B8E8003B3F71 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
