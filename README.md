@@ -56,9 +56,6 @@ it, simply add the following line to your Podfile:
 
     pod "JBGradientTextViews"
 
-## Author
-
-carleek, bryson.joshua@gmail.com
 
 ## License
 
