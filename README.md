@@ -48,7 +48,6 @@ Each  UILabel, UITextView, and UITextField each contain the following additional
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-## Requirements
 
 ## Installation
 
