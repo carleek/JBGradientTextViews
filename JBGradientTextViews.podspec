@@ -6,7 +6,7 @@
 #
 Pod::Spec.new do |s|
   s.name             = "JBGradientTextViews"
-  s.version          = File.read('VERSION')
+  s.version          = "1.0.0" 
   s.summary          = "JBGradientTextViews adds the ability to add gradients to all your favorite UI text classes!"
   s.homepage         = "https://github.com/carleek/JBGradientTextViews"
   s.license          = 'MIT'

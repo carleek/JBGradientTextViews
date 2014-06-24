@@ -1,0 +1,14 @@
+PODS:
+  - JBGradientTextViews (1.0.0)
+
+DEPENDENCIES:
+  - JBGradientTextViews (from `../`)
+
+EXTERNAL SOURCES:
+  JBGradientTextViews:
+    :path: ../
+
+SPEC CHECKSUMS:
+  JBGradientTextViews: 8b20e85ea498630231e2aa97af2df8084bb29bfc
+
+COCOAPODS: 0.33.1
