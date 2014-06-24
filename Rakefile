@@ -62,7 +62,7 @@ task :release do
 
   # Then release
   sh "git commit #{podspec_path} CHANGELOG.md VERSION -m 'Release #{spec_version}' --allow-empty"
-  sh "git tag -a #{spec_version} -m 'Release #{spec_version}'"
+
   sh "git push origin master"
   sh "git push origin --tags"
   if repo == "master"
