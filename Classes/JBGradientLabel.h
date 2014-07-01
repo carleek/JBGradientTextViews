@@ -7,21 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "GradientType.h"
+#import "UIView+Gradient.h"
 
 @interface JBGradientLabel : UILabel
-@property (nonatomic, assign) JBGradientType gradientType;
-
-@property (nonatomic, strong) NSArray *gradientColors;
-@property (nonatomic, strong) NSArray *gradientLocations;
-@property (nonatomic, assign) CGGradientDrawingOptions options;
-
-@property (nonatomic, assign) CGPoint startPoint;
-@property (nonatomic, assign) CGPoint endPoint;
-
-@property (nonatomic, assign) CGPoint startCenter;
-@property (nonatomic, assign) CGFloat startRadius;
-@property (nonatomic, assign) CGPoint endCenter;
-@property (nonatomic, assign) CGFloat endRadius;
 
 @end
